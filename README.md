@@ -19,24 +19,6 @@ Este proyecto implementa el juego de Batalla Naval (Battleship) en Java. Los jug
    java -version
    ```
 
-## Compilación y Ejecución
-
-### Desde código fuente
-
-1. Navega al directorio del proyecto:
-   ```
-   cd "c:\Users\FrankluX\Documents\Proyectos y TPs\Batalla Naval"
-   ```
-
-2. Compila el código:
-   ```
-   javac Main.java
-   ```
-
-3. Ejecuta el programa:
-   ```
-   java Main
-   ```
 
 ### Usando el JAR precompilado
 
