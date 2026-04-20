@@ -9,29 +9,15 @@ public class Main {
         System.out.println("=== BIENVENIDO A BATALLA NAVAL ===");
         System.out.println();
         
-        // Inicializar el juego
-        iniciarJuego();
+        
+        Tablero tablero = new Tablero();
+        tablero.colocarBarco(2, 3, 3, true); // Coloca un barco horizontal de tamaño 3 en la posición (2,3)
+        tablero.mostrarTablero();
+
+        System.out.println("---Disparo---");
+        tablero.disparar(2, 3); // Dispara en la posición (2,3)
+        tablero.disparar(0, 0); // Dispara en la posición (0,0) - agua
+        tablero.mostrarTablero();
     }
     
-    /**
-     * Inicia el flujo principal del juego
-     */
-    private static void iniciarJuego() {
-        System.out.println("Iniciando nueva partida...");
-        System.out.println();
-        
-        // TODO: Crear tableros para ambos jugadores
-        System.out.println("Creando tableros...");
-        
-        // TODO: Posicionar barcos
-        System.out.println("Posicionando barcos...");
-        
-        // TODO: Iniciar bucle principal del juego
-        System.out.println("¡Que comience la batalla!");
-        
-        // TODO: Implementar lógica de turnos
-        // TODO: Implementar sistema de disparos
-        // TODO: Implementar detección de hundimiento
-        // TODO: Implementar condiciones de victoria
-    }
 }
