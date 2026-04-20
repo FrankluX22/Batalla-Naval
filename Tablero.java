@@ -38,8 +38,8 @@ public class Tablero {
 
     public boolean colocarBarco(int fila, int col, int tamanio, boolean esHorizontal) {
         // Primero, verifica si el barco cabe en el tablero
-        if (esHorizontal && col + tamanio > TAMANIO) return false;
-        if (!esHorizontal && fila + tamanio > TAMANIO) return false;
+        if (esHorizontal && col + tamanio > TAMANIO) return false; // El barco no cabe horizontalmente
+        if (!esHorizontal && fila + tamanio > TAMANIO) return false; // El barco no cabe verticalmente
 
         // Luego, verifica si el espacio está libre
         for (int i = 0; i < tamanio; i++) {
