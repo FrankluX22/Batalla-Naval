@@ -18,7 +18,7 @@ public class Tablero {
 
     public void mostrarTablero() {
         // Imprimir números de columna (1-10)
-        System.out.print("   ");
+        System.out.print("  ");
         for (int col = 1; col <= TAMANIO; col++) {
             System.out.printf("%2d", col);
         }
