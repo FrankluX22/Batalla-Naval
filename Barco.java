@@ -1,6 +1,6 @@
 public class Barco {
-    private String nombre;
-    private int tamanio;
+    private final  String nombre;
+    private final int tamanio;
     private int impactos;
 
     // Constructor

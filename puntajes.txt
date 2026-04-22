@@ -1,2 +1,6 @@
 Franco - GANÓ - Intentos: 5
 Juan - PERDIÓ - Intentos: 10
+Franco - GANÓ - Intentos: 5
+Juan - PERDIÓ - Intentos: 10
+Franco - GANÓ - Intentos: 5
+Juan - PERDIÓ - Intentos: 10

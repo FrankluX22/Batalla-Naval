@@ -1,9 +1,9 @@
 import java.util.ArrayList;
 
 public class Jugador {
-    private String nombre;
-    private Tablero tablero;
-    private ArrayList<Barco>barcos;
+    private final String nombre;
+    private final Tablero tablero;
+    private final ArrayList<Barco>barcos;
 
     public Jugador(String nombre) {
         this.nombre = nombre;
