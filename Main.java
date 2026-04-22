@@ -16,6 +16,7 @@ public class Main {
 
         System.out.println("---Disparo---");
         tablero.disparar(2, 3); // Dispara en la posición (2,3)
+        System.out.println("---Disparo---");
         tablero.disparar(0, 0); // Dispara en la posición (0,0) - agua
         tablero.mostrarTablero();
     }
