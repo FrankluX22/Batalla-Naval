@@ -1,14 +1,17 @@
 import java.util.ArrayList;
+import java.util.Stack;
 
 public class Jugador {
     private final String nombre;
     private final Tablero tablero;
     private final ArrayList<Barco>barcos;
+    private  Stack<String>historialDisparos;
 
     public Jugador(String nombre) {
         this.nombre = nombre;
         this.tablero = new Tablero();
         this.barcos = new ArrayList<>();
+        this.historialDisparos = new Stack<>();
     }
 
     public void agregarBarco(Barco barco) {
