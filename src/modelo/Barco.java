@@ -1,3 +1,5 @@
+package modelo;
+
 public class Barco {
     private final  String nombre;
     private final int tamanio;
