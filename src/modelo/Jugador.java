@@ -1,3 +1,4 @@
+import modelo.Tablero;
 import java.util.ArrayList;
 import java.util.Stack;
 

@@ -1,3 +1,5 @@
+package modelo;
+
 public class Tablero {
     private char[][] tablero;
     private static final int TAMANIO = 10;
