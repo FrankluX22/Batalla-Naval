@@ -55,16 +55,47 @@ public class Tablero {
             tablero[f][c] = 'B'; // Representa un barco
         }
 
-        return true;
+return true;
     }
 
     public boolean disparar(int fila, int col) {
         if (tablero[fila][col] == 'B') {
-            tablero[fila][col] = 'X'; // Barco hundido
-            return true; // Disparo exitoso
+            tablero[fila][col] = 'X';
+            return true;
         } else {
-            tablero[fila][col] = 'O'; // Agua golpeada
-            return false; // Disparo fallido
+            tablero[fila][col] = 'O';
+            return false;
+        }
+    }
+
+    public boolean puedeDisparar(int fila, int col) {
+        return tablero[fila][col] == '~' || tablero[fila][col] == 'B';
+    }
+
+    public char getCelda(int fila, int col) {
+        return tablero[fila][col];
+    }
+
+    public void mostrarTableroOculto() {
+        System.out.print("   ");
+        for (int col = 1; col <= TAMANIO; col++) {
+            System.out.printf("%2d", col);
+        }
+        System.out.println();
+
+        for (int fila = 0; fila < TAMANIO; fila++) {
+            char letra = (char) ('A' + fila);
+            System.out.print(letra + "  ");
+
+            for (int col = 0; col < TAMANIO; col++) {
+                char celda = tablero[fila][col];
+                if (celda == 'B') {
+                    System.out.print("~ ");
+                } else {
+                    System.out.printf("%2c", celda);
+                }
+            }
+            System.out.println();
         }
     }
 }
